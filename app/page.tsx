@@ -1,5 +1,4 @@
-import Image from "next/image";
-import GlucoseInsulin from "../components/ui/GlucoseInsulin";
+import GlucoseInsulin from "../components/GlucoseInsulin";
 
 export default function Home() {
   return (
