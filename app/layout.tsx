@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "🍎 Sukari",
+  title: "Sukari",
   description: "Your Diabetes Helper",
 };
 
@@ -30,14 +30,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="https://fav.farm/%F0%9F%A7%91%F0%9F%8F%BB%E2%80%8D%E2%9A%95%EF%B8%8F"
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50`}
       >
         <SidebarProvider>
           <AppSidebar />
-          <SidebarInset className="relative">
+          <SidebarInset className="relative sm:w-[480px] sm:flex">
             <SidebarTrigger className="absolute" />
-            {children}
+            <div className="flex min-h-dvh items-center justify-center font-sans">
+              {children}
+            </div>
           </SidebarInset>
         </SidebarProvider>
       </body>

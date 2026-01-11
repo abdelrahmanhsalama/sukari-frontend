@@ -34,8 +34,8 @@ const History = () => {
     },
   ];
   return (
-    <div className="h-[80vh] w-[80vw] space-y-3 flex flex-col">
-      <h1 className="text-center text-[2rem]">🍎 Sukari</h1>
+    <div className="h-[80vh] w-[80vw] sm:w-[480px] space-y-3 flex flex-col">
+      <h1 className="text-center text-3xl">👩🏻‍⚕️ Sukari</h1>
       <Card className="flex-1 p-0">
         <CardContent className="flex flex-col justify-center space-y-2 p-3">
           {logs.map((logEntry) =>

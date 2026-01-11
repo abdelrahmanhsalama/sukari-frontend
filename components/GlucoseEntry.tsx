@@ -8,11 +8,11 @@ const GlucoseEntry = ({
   date: string;
 }) => {
   return (
-    <div className="flex justify-between items-center bg-red-100 p-2 rounded-md h-[70px]">
+    <div className="flex justify-between items-center bg-red-100 p-2 rounded-md h-[70px] shadow-sm">
       <div className="flex gap-1 items-center">
         <p className="text-3xl">🩸</p>
         <p>
-          <span className="text-2xl">{reading}</span>
+          <span className="text-xl">{reading}</span>
           <span className="text-sm"> mg/dL</span>
         </p>
       </div>

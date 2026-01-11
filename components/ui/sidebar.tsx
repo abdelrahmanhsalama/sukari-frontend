@@ -266,14 +266,17 @@ function SidebarTrigger({
       data-slot="sidebar-trigger"
       variant="ghost"
       size="icon"
-      className={cn("text-2xl", className)}
+      className={cn(
+        "text-xl border m-3 shadow bg-card cursor-pointer",
+        className
+      )}
       onClick={(event) => {
         onClick?.(event);
         toggleSidebar();
       }}
       {...props}
     >
-      &#8801;
+      &#9776;
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   );

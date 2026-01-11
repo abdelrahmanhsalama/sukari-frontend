@@ -12,7 +12,7 @@ const MedicationEntry = ({
   date: string;
 }) => {
   return (
-    <div className="flex justify-between align-center bg-blue-100 p-2 rounded-md h-[70px]">
+    <div className="flex justify-between align-center bg-blue-100 p-2 rounded-md h-[70px] shadow-md">
       <div className="flex gap-1">
         <p className="text-3xl flex items-center">
           {subType === "insulin" ? "💉" : "💊"}

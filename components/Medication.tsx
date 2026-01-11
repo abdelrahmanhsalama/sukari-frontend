@@ -12,10 +12,10 @@ const Medication = () => {
 
   return (
     <TabsContent value="medication">
-      <Card>
-        <CardContent className="flex flex-col justify-center space-y-4 h-50 w-[80vw]">
-          <p className="text-center text-sm font-medium">
-            What medication did you take?
+      <Card className="h-full w-[80vw] sm:w-[480px] flex flex-col justify-center">
+        <CardContent className="flex flex-col justify-center space-y-4">
+          <p className="text-center text-xl font-medium">
+            Add Medication Entry
           </p>
           <RadioGroup defaultValue={option} className="gap-2">
             <div
